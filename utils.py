@@ -7,6 +7,8 @@ from typing import Optional, Union
 import pandas as pd
 import numpy as np
 
+from config import DATE_FORMAT  # Add this import
+
 logger = logging.getLogger(__name__)
 
 def clean_text(text: str) -> str:
@@ -73,6 +75,8 @@ def validate_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     
     return df 
 =======
+
+
 import re
 import logging
 from datetime import datetime
@@ -80,6 +84,8 @@ from dateutil.parser import parse
 from typing import Optional, Union
 import pandas as pd
 import numpy as np
+
+from config import DATE_FORMAT  # Add this import
 
 logger = logging.getLogger(__name__)
 
